@@ -3,8 +3,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Colorscheme
-set background=dark
-colorscheme mymrkn256
+"set background=dark
+"colorscheme mymrkn256
 
 set cursorline
 

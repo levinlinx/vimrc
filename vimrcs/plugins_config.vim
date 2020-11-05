@@ -10,7 +10,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'xinghun/vim-cscope'
-Plug 'xinghun/vim-gtags'
+"Plug 'xinghun/vim-gtags'
 Plug 'xinghun/vim-svn'
 Plug 'xinghun/vim-mymrkn256'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -170,7 +170,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+"autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
