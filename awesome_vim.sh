@@ -94,7 +94,7 @@ if [ -d .vim_runtime ]; then
     cd .vim_runtime
     git pull
 else
-    git clone https://github.com/xinghun/vimrc.git .vim_runtime
+    git clone https://github.com/shandianling/vimrc.git .vim_runtime
 fi
 
 cd ~/.vim_runtime
