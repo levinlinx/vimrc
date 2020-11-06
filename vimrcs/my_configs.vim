@@ -74,3 +74,30 @@ let g:NERDTreeGlyphReadOnly = "RO"
 "不显示tabs页签--https://zhuanlan.zhihu.com/p/25946307
 set showtabline=0
 
+"coc使用 QuickFix窗口
+let g:coc_user_config = { 
+\    "json.enable": v:false,
+\    "diagnostic": {
+\        "enable": v:true,
+\        "refreshAfterSave": v:true
+\    },  
+\   "coc.preferences.useQuickfixForLocations": v:true,
+\    "languageserver": {
+\        "ccls": {
+\            "command": s:ccls_bin,
+\            "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+\            "trace.server": "verbose",
+\            "filetypes": ["c", "cc", "cpp"],
+\            "rootPatterns": [".ccls"],
+\            "initializationOptions": {
+\                "index": {
+\                    "threads": 4
+\                },  
+\                "clang": {
+\                    "resourceDir": s:clang_res_dir
+\                }   
+\            }   
+\        }   
+\    }   
+\}
+
