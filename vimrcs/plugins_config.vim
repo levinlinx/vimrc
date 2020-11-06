@@ -18,7 +18,7 @@ Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'flazz/vim-colorschemes'
 Plug 'neoclide/coc.nvim', {'branch': 'remotes/origin/release'}
-Plug 'xinghun/vim-tcpp'
+Plug 'levinlinx/vim-tcpp'
 Plug 'vim-scripts/a.vim'
 Plug 'vim-scripts/minibufexpl.vim'
 
