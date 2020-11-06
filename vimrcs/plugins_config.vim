@@ -21,6 +21,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'remotes/origin/release'}
 Plug 'levinlinx/vim-tcpp'
 Plug 'vim-scripts/a.vim'
 Plug 'vim-scripts/minibufexpl.vim'
+Plug 'vim-scripts/grep.vim'
 
 "Plug 'ryanoasis/vim-devicons'
 "Plug 'octol/vim-cpp-enhanced-highlight'
