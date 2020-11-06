@@ -40,9 +40,8 @@ let g:winManagerWindowLayout='TagList'
 nmap wm :WMToggle<cr>
 let g:winManagerWidth=20
 
-
-"let g:coc_enable_locationlist = 0
-"autocmd User CocLocationsChange CocList --no-quit --normal location
+let g:coc_enable_locationlist = 0
+autocmd User CocLocationsChange CocList --no-quit --normal location
 "nmap <leader>u <Plug>(coc-references)
 nnoremap <c-l> :CocNext<cr>
 nnoremap <c-h> :CocPrev<cr>
@@ -71,3 +70,7 @@ nnoremap <Leader>vb9 :vertical sb9<CR>
 let g:miniBufExplMapCTabSwitchBufs = 1
 
 let g:NERDTreeGlyphReadOnly = "RO"
+
+"不显示tabs页签--https://zhuanlan.zhihu.com/p/25946307
+set showtabline=0
+
