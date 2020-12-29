@@ -17,11 +17,12 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'flazz/vim-colorschemes'
-Plug 'neoclide/coc.nvim', {'branch': 'remotes/origin/release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'levinlinx/vim-tcpp'
 Plug 'vim-scripts/a.vim'
 Plug 'vim-scripts/minibufexpl.vim'
 Plug 'vim-scripts/grep.vim'
+Plug 'vim-scripts/taglist.vim'
 
 "Plug 'ryanoasis/vim-devicons'
 "Plug 'octol/vim-cpp-enhanced-highlight'

@@ -36,15 +36,24 @@ set nocursorline
 
 "7 文件浏览器和窗口管理器 -- 插件: WinManager
 ""let g:winManagerWindowLayout='FileExplorer'
-let g:winManagerWindowLayout='TagList'
-nmap wm :WMToggle<cr>
-let g:winManagerWidth=20
+"let g:winManagerWindowLayout='TagList'
+"nmap wm :WMToggle<cr>
+"let g:winManagerWidth=20
+"
 
-let g:coc_enable_locationlist = 0
-autocmd User CocLocationsChange CocList --no-quit --normal location
+nmap wn :TlistToggle<cr>
+"nnoremap <Leader>sf :TlistToggle<CR>
+
+let NERDTreeWinSize=25
+let NERDTreeWinPos="right" " 设置NERDTree子窗口位置
+nmap wm :NERDTreeToggle<cr>
+
+"let g:coc_enable_locationlist = 0
+"autocmd User CocLocationsChange CocList --no-quit --normal location
 "nmap <leader>u <Plug>(coc-references)
 nnoremap <c-l> :CocNext<cr>
 nnoremap <c-h> :CocPrev<cr>
+
 
 "nmap <C-]> g]
 
@@ -73,4 +82,15 @@ let g:NERDTreeGlyphReadOnly = "RO"
 
 "不显示tabs页签--https://zhuanlan.zhihu.com/p/25946307
 set showtabline=0
+set shiftwidth=2
+set ts=2
+set expandtab
+set paste
+
+" clang-format                                                                
+if has('python')
+    map <expr> <C-M> ":pyf " . $HOME . "/local/bin/clang-format.py" . "<cr>"
+elseif has('python3')
+    map <expr> <C-M> ":py3f " . $HOME . "/local/bin/clang-format.py" . "<cr>"
+endif
 
