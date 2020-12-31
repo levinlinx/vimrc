@@ -86,7 +86,7 @@ set showtabline=0
 set shiftwidth=2
 set ts=2
 set expandtab
-set paste
+"set paste
 
 " clang-format                                                                
 if has('python')
