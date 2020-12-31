@@ -19,6 +19,7 @@ set tags+=./.tags
 nmap <Leader>aa :A<CR>
 nmap <Leader>av :AV<CR>
 
+let Grep_Skip_Files = '*.bak *~ *.tags'
 nnoremap <Leader>gr :Rgrep<CR>
 "nnoremap <Leader>gr :cs f e <CR>
 
@@ -89,8 +90,8 @@ set paste
 
 " clang-format                                                                
 if has('python')
-    map <expr> <C-M> ":pyf " . $HOME . "/local/bin/clang-format.py" . "<cr>"
+    map <expr> <C-B> ":pyf " . $HOME . "/local/bin/clang-format.py" . "<cr>"
 elseif has('python3')
-    map <expr> <C-M> ":py3f " . $HOME . "/local/bin/clang-format.py" . "<cr>"
+    map <expr> <C-B> ":py3f " . $HOME . "/local/bin/clang-format.py" . "<cr>"
 endif
 
