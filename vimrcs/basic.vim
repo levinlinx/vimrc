@@ -99,7 +99,7 @@ set smartcase
 set hlsearch
 
 " Makes search act like search in modern browsers
-set incsearch 
+"set incsearch 
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw 
@@ -274,20 +274,20 @@ map 0 ^
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 " http://www.skywind.me/blog/archives/1846
-execute "set <M-j>=\ej"
-execute "set <M-k>=\ek"
-set ttimeout ttimeoutlen=100
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-if has("mac") || has("macunix")
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
-endif
+"execute "set <M-j>=\ej"
+"execute "set <M-k>=\ek"
+"set ttimeout ttimeoutlen=100
+"nmap <M-j> mz:m+<cr>`z
+"nmap <M-k> mz:m-2<cr>`z
+"vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+"vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+"
+"if has("mac") || has("macunix")
+"  nmap <D-j> <M-j>
+"  nmap <D-k> <M-k>
+"  vmap <D-j> <M-j>
+"  vmap <D-k> <M-k>
+"endif
 
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
