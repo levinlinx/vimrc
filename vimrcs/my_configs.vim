@@ -46,7 +46,7 @@ nmap wn :TlistToggle<cr>
 "nnoremap <Leader>sf :TlistToggle<CR>
 
 let NERDTreeWinSize=25
-let NERDTreeWinPos="right" " 设置NERDTree子窗口位置
+let NERDTreeWinPos="left" " 设置NERDTree子窗口位置
 nmap wm :NERDTreeToggle<cr>
 
 "let g:coc_enable_locationlist = 0
