@@ -1,0 +1,10 @@
+%compile_commands.json
+-Wno-string-plus-int
+-Wno-reserved-user-defined-literal
+-Wno-format-security
+-Wno-overloaded-virtual
+-Wno-mismatched-tags
+-Wno-unused-private-field
+-Wno-gnu-static-float-init
+-Wno-return-type-c-linkage
+--gcc-toolchain=/usr
